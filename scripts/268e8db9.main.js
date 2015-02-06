@@ -1,0 +1,1 @@
+var map=new ol.Map({layers:[new ol.layer.Tile({source:new ol.source.OSM})],controls:ol.control.defaults({attributionOptions:{collapsible:!1}}),renderer:"canvas",target:"map",view:new ol.View({center:[0,0],zoom:2})});
