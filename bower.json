@@ -1,0 +1,9 @@
+{
+  "name": "ol3buildr",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0",
+    "modernizr": "~2.8.2",
+    "ol3": "hastebrot/ol3-dist#~3.1.1"
+  }
+}

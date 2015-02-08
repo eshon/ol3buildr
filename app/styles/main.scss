@@ -1,0 +1,151 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$olgreen: #1f6b75;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Quattrocento Sans',sans-serif;
+  overflow: hidden;
+  font-size: 13px;
+  position: absolute;
+}
+
+.navbar-brand, .navbar-default .navbar-brand {
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 200%;
+  color: $olgreen;
+
+  img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main builder form and map */
+.main-container {
+  margin-top: 30px;
+}
+.left-form, .right-map {
+  border: 1px solid #ccc;
+}
+.left-form{
+  float: left;
+  overflow: scroll;
+  padding: 20px 25px 10px 15px;
+  width: 300px;
+  z-index: 100;
+
+  .form-section {
+    h5 {
+      font-size: 13px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      color: #ccc;
+      font-weight: bold;
+      background-color: #fff;
+    }
+  }
+
+  input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    vertical-align: bottom;
+  }
+
+  .right-check {
+    @extend input[type="checkbox"];
+    float: right;
+    margin-right: 52px !important;
+  }
+
+  .form-inline {
+    width:90%;
+    margin-left: 2%;
+    margin-bottom: 5px
+  }
+
+  .label-inline {
+    line-height: 2em;
+  }
+
+  .input-inline {
+    float: right;
+    margin-right: 5px;
+  }
+  .dropdown-inline {
+    float: right;
+  }
+}
+.right-map {
+  border-left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  left: 300px;
+  bottom: 0;
+  height: 100%;
+
+  #map {
+    height: 100%;
+  }
+}
+
+.map_layers .form-group {
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+
+.getcode {
+  margin-top: 20px;
+}
